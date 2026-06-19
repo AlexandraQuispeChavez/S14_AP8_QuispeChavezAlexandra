@@ -1,0 +1,236 @@
+.page-header {
+  background: linear-gradient(135deg, #0d9488, #1a73a7);
+  padding: 3.5rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contacto-section {
+  padding: 3rem 2rem 4rem;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.contacto-info {
+  flex: 0 0 340px;
+}
+
+.contacto-info h2,
+.formulario-wrap h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  border-left: 3px solid #0d9488;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.info-card strong {
+  display: block;
+  color: #1e293b;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.2rem;
+}
+
+.info-card p {
+  color: #475569;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.clinica-img img {
+  width: 100%;
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.img-caption {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.82rem;
+  margin-top: 0.5rem;
+}
+
+/* FORMULARIO */
+.formulario-wrap {
+  flex: 1;
+}
+
+.success-alert {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #166534;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.form {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.form-group.full {
+  flex: 1 1 100%;
+}
+
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  color: #1e293b;
+  background: #f8fafc;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0d9488;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.12);
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #0d9488, #1a73a7);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.85rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  align-self: flex-start;
+  letter-spacing: 0.3px;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* EMERGENCIAS */
+.emergencia-banner {
+  background: #991b1b;
+  padding: 2rem;
+}
+
+.emergencia-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.emergencia-content h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.emergencia-content p {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+}
+
+.btn-emergencia {
+  background: #fff;
+  color: #991b1b;
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  transition: transform 0.2s;
+}
+
+.btn-emergencia:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .contacto-info {
+    flex: 1;
+    width: 100%;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+}

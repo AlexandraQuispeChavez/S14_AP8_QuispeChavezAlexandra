@@ -1,0 +1,185 @@
+.page-header {
+  background: linear-gradient(135deg, #1a73a7, #0d9488);
+  padding: 3.5rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.medicos-section {
+  padding: 3rem 2rem 4rem;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.medicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.8rem;
+}
+
+.medico-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.medico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.13);
+}
+
+.medico-img-wrap {
+  height: 220px;
+}
+
+.medico-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.medico-body {
+  padding: 1.5rem;
+}
+
+.medico-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.4rem;
+}
+
+.medico-esp {
+  display: inline-block;
+  background: #f0fdfa;
+  color: #0d9488;
+  border: 1px solid #ccfbf1;
+  padding: 0.25rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.medico-body p {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.medico-info {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #475569;
+  min-width: 90px;
+}
+
+/* ENFERMERÍA */
+.enfermeria-banner {
+  background: #1e293b;
+  padding: 4rem 2rem;
+}
+
+.enfermeria-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.enfermeria-text {
+  flex: 1;
+}
+
+.enfermeria-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.enfermeria-text p {
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 1.2rem;
+}
+
+.enfermeria-text strong {
+  color: #5eead4;
+}
+
+.enfermeria-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.enfermeria-lista li {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  border-left: 2px solid #0d9488;
+}
+
+.enfermeria-img {
+  flex: 0 0 380px;
+}
+
+.enfermeria-img img {
+  width: 100%;
+  border-radius: 16px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .medicos-grid {
+    grid-template-columns: 1fr;
+  }
+  .enfermeria-content {
+    flex-direction: column;
+  }
+  .enfermeria-img {
+    flex: 1;
+    width: 100%;
+  }
+}

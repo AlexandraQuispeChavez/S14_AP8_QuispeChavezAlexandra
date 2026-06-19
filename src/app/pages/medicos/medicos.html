@@ -1,0 +1,63 @@
+<!-- HEADER -->
+<section class="page-header">
+  <div class="page-header-content">
+    <h1>Nuestros Médicos</h1>
+    <p>Un equipo multidisciplinario de especialistas dedicados al cuidado neonatal con los más altos estándares</p>
+  </div>
+</section>
+
+<!-- EQUIPO MÉDICO -->
+<section class="medicos-section">
+  <div class="container">
+    <div class="medicos-grid">
+      @for (m of medicos; track m.nombre) {
+        <div class="medico-card">
+          <div class="medico-img-wrap">
+            <img [src]="m.imagen" [alt]="m.nombre" />
+          </div>
+          <div class="medico-body">
+            <h3>{{ m.nombre }}</h3>
+            <span class="medico-esp">{{ m.especialidad }}</span>
+            <p>{{ m.descripcion }}</p>
+            <div class="medico-info">
+              <div class="info-item">
+                <span class="info-label">Horario</span>
+                <span>{{ m.horario }}</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Experiencia</span>
+                <span>{{ m.anos }} años</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN EQUIPO DE ENFERMERÍA -->
+<section class="enfermeria-banner">
+  <div class="enfermeria-content">
+    <div class="enfermeria-text">
+      <h2>Equipo de Enfermería Especializada</h2>
+      <p>
+        Contamos con más de <strong>40 enfermeras neonatales certificadas</strong> que
+        brindan atención continua en nuestra UCIN. Nuestro personal de enfermería tiene
+        formación especializada en cuidados intensivos neonatales y apoyo emocional a familias.
+      </p>
+      <ul class="enfermeria-lista">
+        <li>Certificadas en Enfermería Neonatal</li>
+        <li>Capacitación continua internacional</li>
+        <li>Atención humanizada y familiar</li>
+        <li>Disponibles 24 horas al día</li>
+      </ul>
+    </div>
+    <div class="enfermeria-img">
+      <img
+        src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=450&q=80"
+        alt="Enfermera neonatal"
+      />
+    </div>
+  </div>
+</section>

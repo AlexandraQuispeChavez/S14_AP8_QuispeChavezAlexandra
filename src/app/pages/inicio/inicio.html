@@ -1,0 +1,81 @@
+<!-- HERO BANNER -->
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <span class="hero-badge">Clínica Especializada en Neonatología</span>
+      <h1>BebéVida <br><span class="hero-sub">Centro de Neonatología</span></h1>
+      <p class="hero-desc">
+        Brindamos atención médica especializada a recién nacidos con los más altos estándares
+        de calidad. Nuestro equipo de neonatólogos vela por la salud y desarrollo de cada bebé
+        desde el primer día de vida.
+      </p>
+      <div class="hero-buttons">
+        <a routerLink="/especialidades" class="btn-primary">Ver Especialidades</a>
+        <a routerLink="/contacto" class="btn-secondary">Contactar ahora</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80"
+        alt="Bebé en unidad neonatal"
+        class="hero-img"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- ESTADÍSTICAS -->
+<section class="stats">
+  @for (stat of stats; track stat.label) {
+    <div class="stat-card">
+      <span class="stat-numero">{{ stat.numero }}</span>
+      <span class="stat-label">{{ stat.label }}</span>
+    </div>
+  }
+</section>
+
+<!-- DESCRIPCIÓN -->
+<section class="about">
+  <div class="about-text">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      <strong>BebéVida</strong> es un centro médico especializado en neonatología, dedicado al cuidado
+      integral de recién nacidos. Contamos con una Unidad de Cuidados Intensivos Neonatales (UCIN) de
+      alta complejidad, equipada con tecnología de punta y un equipo multidisciplinario altamente capacitado.
+    </p>
+    <p>
+      Nuestra misión es garantizar que cada bebé tenga el mejor inicio de vida posible, ofreciendo
+      diagnóstico oportuno, tratamiento especializado y acompañamiento a las familias durante todo el proceso.
+    </p>
+    <a routerLink="/medicos" class="btn-link">Conoce a nuestros médicos &rarr;</a>
+  </div>
+  <div class="about-img">
+    <img
+      src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=500&q=80"
+      alt="Médico neonatólogo atendiendo bebé"
+    />
+  </div>
+</section>
+
+<!-- SERVICIOS DESTACADOS -->
+<section class="servicios-home">
+  <h2>Nuestros Servicios</h2>
+  <p class="section-sub">Atención integral desde el primer momento</p>
+  <div class="servicios-grid">
+    @for (s of servicios; track s.titulo) {
+      <div class="servicio-card">
+        <h3>{{ s.titulo }}</h3>
+        <p>{{ s.desc }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-banner">
+  <div class="cta-content">
+    <h2>¿Necesitas una consulta?</h2>
+    <p>Estamos disponibles las 24 horas del día, los 7 días de la semana para atender a tu bebé.</p>
+    <a routerLink="/contacto" class="btn-primary">Agenda una cita</a>
+  </div>
+</section>

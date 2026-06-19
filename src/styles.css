@@ -1,0 +1,37 @@
+/* RESET Y BASE */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #ffffff;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  min-height: calc(100vh - 70px);
+}
+
+/* FOOTER GLOBAL */
+body::after {
+  content: '© 2025 Clínica BebéVida · Neonatología · Todos los derechos reservados';
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  background: #0f172a;
+  color: #64748b;
+  font-size: 0.85rem;
+}

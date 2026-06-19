@@ -1,0 +1,43 @@
+<!-- HEADER -->
+<section class="page-header">
+  <div class="page-header-content">
+    <h1>Especialidades</h1>
+    <p>Contamos con las áreas especializadas más avanzadas en neonatología para garantizar el mejor cuidado a tu bebé</p>
+  </div>
+</section>
+
+<!-- ESPECIALIDADES GRID -->
+<section class="especialidades-section">
+  <div class="container">
+    @for (esp of especialidades; track esp.titulo) {
+      <div class="esp-card">
+        <div class="esp-img-wrap">
+          <img [src]="esp.imagen" [alt]="esp.titulo" />
+        </div>
+        <div class="esp-body">
+          <h2>{{ esp.titulo }}</h2>
+          <p>{{ esp.descripcion }}</p>
+          <div class="esp-servicios">
+            <strong>Servicios incluidos:</strong>
+            <ul>
+              @for (s of esp.servicios; track s) {
+                <li>{{ s }}</li>
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- INFO BANNER -->
+<section class="info-banner">
+  <div class="info-content">
+    <div>
+      <h3>¿Tienes dudas sobre nuestras especialidades?</h3>
+      <p>Comunícate con nuestro equipo de coordinación médica para orientarte.</p>
+    </div>
+    <span class="info-telefono">(01) 234-5678</span>
+  </div>
+</section>
